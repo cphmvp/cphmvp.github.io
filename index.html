@@ -1,1 +1,56 @@
-Hello world,i am crawler or name spider
+<!DOCTYPE html>
+<head>
+<title>作业帮|天网-数据平台</title>
+<meta charset="UTF-8"></meta>
+<style type='text/css'>
+body {
+	background-color: #CCC;
+}
+</style>
+<!--ico-->
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet"
+	href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--导航-->
+	<div id="navigation">
+<?php echo file_get_contents('com.html'); ?>
+<!--	<script type="text/javascript">
+	 $("#navigation").load("com.html");
+	</script> -->
+	</div>
+
+	<!--正文-->
+	<div class="col-sm-9 col-sm-offset-3 col-md-12 col-md-offset-0 main">
+		<div>
+			<h2>作业帮|天网-数据平台</h2>
+		</div>
+
+		<div class="panel panel-default">
+			<!-- Default panel contents -->
+			<div class="panel-heading">工具</div>
+			<div class="panel-body">
+				<div class="btn-group bth-group-lg">
+					<a href="list_status.php" target="_blank"><button type="button" class="btn btn-default">数据平台工具</button></a>
+					<a href="http://192.168.0.37:8085/home/buglist" target="_blank"><button type="button" class="btn btn-default">BUG收集列表</button></a>
+					<a href="http://crm.afpai.com/" target="_blank"><button type="button" class="btn btn-default">题库数据PV分析</button></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+
+
+</html>
+<script>
+  $('.nav li').eq(0).addClass('active');
+</script>
